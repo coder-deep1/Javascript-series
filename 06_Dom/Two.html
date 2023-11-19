@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>DOM learning</title>
+	</head>
+	<body style="color: #fff; background-color: #212121">
+		<h1>learning DOM | chai aur code</h1>
+		<div class="parent">
+			<div class="day">Monday</div>
+			<div class="day">Tuesday</div>
+			<div class="day">Wednesday</div>
+			<div class="day">Thursday</div>
+			<div class="day">Friday</div>
+			<div class="day">Saturday</div>
+		</div>
+	</body>
+	<script>
+		// const h1 = document.querySelector("h1").innerText;
+		// console.log(h1);
+		const parent = document.querySelector(".parent");
+		// console.log(parent);
+		// for (let i = 0; i < parent.children.length; i++) {
+		// 	console.log(parent.children[i].innerHTML);
+		// }
+		parent.children[2].style.color = "yellow";
+		parent.children[2].style.backgroundColor = "purple";
+		// console.log(parent.firstElementChild);
+		// console.log(parent.lastElementChild);
+		const dayOne = document.querySelector(".day");
+		// 	console.log(dayOne);
+		// 	console.log(dayOne.nextElementSibling);
+		// 	console.log(dayOne.parentElement);
+		console.log("Nodes: ", parent.childNodes);
+	</script>
+</html>

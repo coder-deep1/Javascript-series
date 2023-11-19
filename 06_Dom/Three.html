@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Coffee or Code</title>
+	</head>
+	<body style="color: #fff; background-color: #212121"></body>
+	<script>
+		const div = document.createElement("div");
+		console.log(div);
+		div.className = "main";
+		div.id = Math.round(Math.random() * 10 + 1);
+		div.setAttribute("title", "Dummy Text");
+		div.style.backgroundColor = "yellow";
+		div.style.color = "green";
+		div.style.padding = "10px";
+		// div.innerText = "lean DOM in Js ";
+		const addText = (document.createTextNode = "Lean DOM in Javascript");
+		div.append(addText);
+		document.body.append(div);
+
+		/* list Item Add */
+
+		const ul = document.createElement("ul");
+		console.log(ul);
+		ul.className = "ul-item";
+		ul.id = "main-ul";
+		ul.style.backgroundColor = "yellow";
+		ul.style.color = "green";
+		ul.setAttribute("col-space", "2px");
+		ul.style.padding = "10px";
+		const li = document.createElement("li");
+		ul.append(li);
+		const liData = (document.createTextNode = "Lean DOM in Javascript");
+		li.append(liData);
+		document.body.append(ul);
+		/* New Element */
+		const newElement = document.createElement("div");
+		console.log(newElement);
+		newElement.className = "new-element";
+		newElement.id = "new-element-id";
+		newElement.style.backgroundColor = "yellow";
+		newElement.style.color = "green";
+		newElement.style.padding = "10px";
+		const h4 = document.createElement("h4");
+		newElement.append(h4);
+		const data = (document.createTextNode = "new element Generate JS");
+		h4.append(data);
+		document.body.append(newElement);
+
+		/* chatgpt */
+		/* 	const newElement = document.createElement("div");
+		newElement.className = "new-element";
+		newElement.id = "new-element-id";
+		newElement.style.backgroundColor = "yellow";
+		newElement.style.color = "green";
+		newElement.style.padding = "10px";
+		const h4 = document.createElement("h4");
+		const data = (document.createTextNode = "new element Generate JS");
+		h4.append(data);
+		newElement.appendChild(h4);
+		document.body.appendChild(newElement); */
+	</script>
+</html>
